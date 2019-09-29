@@ -187,7 +187,7 @@ public class People extends AppCompatActivity {
         if (n<=0){
             Toast toast1 =
                     Toast.makeText(getApplicationContext(),
-                            "No Existen Anteriores", Toast.LENGTH_SHORT);
+                            "No Existen Registros Anteriores", Toast.LENGTH_SHORT);
 
             toast1.show();
         }
