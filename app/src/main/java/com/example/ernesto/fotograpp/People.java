@@ -172,7 +172,11 @@ public class People extends AppCompatActivity {
         n=n+1;
         callWebService(n);
         if (n>81){
-            Log.v("ERROR", "No existe siguiente");
+            Toast toast1 =
+                    Toast.makeText(getApplicationContext(),
+                            "No Existen mas registros", Toast.LENGTH_SHORT);
+
+            toast1.show();
 
         }
     }
@@ -181,8 +185,11 @@ public class People extends AppCompatActivity {
         n=n-1;
         callWebService(n);
         if (n<=0){
-            Log.v("ERROR", "No existe anterior");
+            Toast toast1 =
+                    Toast.makeText(getApplicationContext(),
+                            "No Existen Anteriores", Toast.LENGTH_SHORT);
 
+            toast1.show();
         }
     }
 

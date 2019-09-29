@@ -188,7 +188,11 @@ public class Planets extends AppCompatActivity {
         n=n+1;
         callWebService(n);
         if (n>81){
-            Log.v("ERROR", "No existe siguiente");
+            Toast toast1 =
+                    Toast.makeText(getApplicationContext(),
+                            "No Existen mas Registros", Toast.LENGTH_SHORT);
+
+            toast1.show();
 
         }
     }
@@ -196,8 +200,16 @@ public class Planets extends AppCompatActivity {
     public void previous1(View view){
         n=n-1;
         callWebService(n);
+        while(n<=0)
+
         if (n<=0){
-            Log.v("ERROR", "No existe anterior");
+
+            Toast toast1 =
+                    Toast.makeText(getApplicationContext(),
+                            "No Existen Anteriores", Toast.LENGTH_SHORT);
+
+            toast1.show();
+
 
         }
     }
