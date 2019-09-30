@@ -171,7 +171,7 @@ public class People extends AppCompatActivity {
     public void next(View view){
         n=n+1;
         callWebService(n);
-        if (n>87){
+        if (n>81){
             Toast toast1 =
                     Toast.makeText(getApplicationContext(),
                             "No Existen mas registros posteriores", Toast.LENGTH_SHORT);
