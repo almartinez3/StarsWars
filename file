@@ -1,0 +1,6 @@
+//creacion de alerta de error en caso de que no existan mas registros anteriores o posteriores //
+Toast toast1 =
+            Toast.makeText(getApplicationContext(),
+                    "No hay registros anteriores", Toast.LENGTH_SHORT);
+ 
+        toast1.show();
